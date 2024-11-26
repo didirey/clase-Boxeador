@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Boxeador
+comment1.params=nombreBoxeador\ fuerzaGolpe\ estado
+comment1.target=Boxeador(java.lang.String,\ int,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=
+comment3.target=int\ getPotenciaGolpe()
+comment4.params=
+comment4.target=boolean\ getKO()
+comment5.params=ponerNombre
+comment5.target=void\ setNombre(java.lang.String)
+comment6.params=ponerPotencia
+comment6.target=void\ setPotenciaGolpe(int)
+comment7.params=
+comment7.target=void\ setKO()
+comment8.params=
+comment8.target=void\ imprimirDetalles()
+comment9.params=
+comment9.target=java.lang.String\ getEstadoObjeto()
+numComments=10

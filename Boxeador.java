@@ -4,13 +4,13 @@ public class Boxeador {
     
     private int potenciaGolpe;
     
-    private boolean KO;
+    private boolean ko;
     
     
     public Boxeador(String nombreBoxeador, int fuerzaGolpe, boolean estado){
         nombre = nombreBoxeador;
-        potenciaGolpe = 0;
-        KO = estado;
+        potenciaGolpe = fuerzaGolpe;
+        ko = estado;
     }
     
     public String getNombre() {
@@ -21,8 +21,8 @@ public class Boxeador {
         return potenciaGolpe;
     }
 
-    public boolean getEstado() {
-        return KO;
+    public boolean getKO() {
+        return ko;
     }
 
     public void setNombre(String ponerNombre) {
@@ -34,9 +34,16 @@ public class Boxeador {
     }
 
     public void setKO() {
-        KO = true;
+        ko = true;
     }
 
+    public void imprimirDetalles(){
+        System.out.println("|Nombre boxeador: " + nombre + " |Potencia de golpe de: " + potenciaGolpe + " |Estado KO: " + ko + " |");
+    }
+
+    public String getEstadoObjeto() {
+        return "El boxeador se llama " + nombre + " tiene una potencia de golpe de " + potenciaGolpe + " y su estado KO es " + ko;
+    }
 
 
 

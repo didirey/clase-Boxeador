@@ -36,15 +36,34 @@ public class Boxeador {
     }
 
     public void setKO() {
-        ko = true;
+        if(ko = false) {
+            ko = true;
+        }
+        else {
+            ko = false;
+        }
     }
 
     public void imprimirDetalles(){
-        System.out.println("|Nombre boxeador: " + nombre + " |Potencia de golpe de: " + potenciaGolpe + " |Estado noqueado: " + ko + " |");
+        String estado;
+        if(ko == true) {
+            estado = "Si";
+        }
+        else {
+            estado = "No";
+        }
+        System.out.println("|Nombre boxeador: " + nombre + " |Potencia de golpe de: " + potenciaGolpe + " |Estado noqueado: " + estado + " |");
     }
 
     public String getEstadoObjeto() {
-        return "El boxeador se llama " + nombre + " tiene una potencia de golpe de " + potenciaGolpe + " y su estado noqueado es " + ko;
+        String estado;
+        if(ko == true) {
+            estado = "Si";
+        }
+        else {
+            estado = "No";
+        }
+        return "El boxeador se llama " + nombre + " tiene una potencia de golpe de " + potenciaGolpe + " y su estado noqueado es " + estado;
     }
 
 

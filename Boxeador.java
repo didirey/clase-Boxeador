@@ -36,7 +36,7 @@ public class Boxeador {
     }
 
     public void setKO() {
-        if(ko = false) {
+        if(ko == false) {
             ko = true;
         }
         else {
